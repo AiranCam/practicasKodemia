@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.shape{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255,0,0,1);
+    transition: bavkground-color 1s ease, border-radius 1s ease, width 1s ease;
+}
+
+
+
+
+/* Break point para tablets */
+@media only screen and (min-width: 768px){
+    .shape{
+        background-color: rgb(0,0,0,1) ;
+        border-radius: 0%;
+    }
+
+    .card{
+        width: calc(50% - 1rem);
+    }
+}   
+
+@media only screen and (min-width: 1024px){
+    .shape{
+        background-color: rgb(0,255,0,1) ;
+        border-radius: 0%;
+        width: 200px;
+    }
+
+    
+}
